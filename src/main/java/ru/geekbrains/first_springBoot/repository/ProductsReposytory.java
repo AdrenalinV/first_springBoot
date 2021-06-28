@@ -23,6 +23,10 @@ public class ProductsReposytory {
         return Collections.unmodifiableList(werehouse);
     }
 
+    public void add(Product p){
+        this.werehouse.add(p);
+    }
+
 
     public Optional<Product> findByID(long id) {
         for (Product p : this.werehouse) {
